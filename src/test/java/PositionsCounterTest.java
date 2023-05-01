@@ -1,5 +1,5 @@
-import Factory.Departments;
-import Factory.Languages;
+import data.Departments;
+import data.Languages;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -61,6 +61,5 @@ public class PositionsCounterTest {
             softly.assertThat(CareersPage.getLanguage()).isEqualTo(expectedLanguage);
             softly.assertThat(CareersPage.cardSize()).isEqualTo(expectedResultsOnPage);
         });
-
     }
 }

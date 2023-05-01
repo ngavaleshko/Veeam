@@ -1,14 +1,13 @@
-package Factory;
+package data;
 
-public enum Departments {
-    RND("Research & Development");
+public enum Languages {
+    EN("English");
 
     private final String values;
 
-    Departments(String value) {
+    Languages(String value) {
         this.values = value;
     }
-
     public String getValues() {
         return values;
     }
