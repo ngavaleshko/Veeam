@@ -48,8 +48,6 @@ public class PositionsCounterTest {
     void openPage(String expectedDepartment, String expectedLanguage, int expectedResultsOnPage) {
         var CareersPage = new CareersPage(driver);
 
-        String ooo = driver.getCurrentUrl();
-        System.out.println(ooo);
         assertThat(driver.getTitle()).isEqualTo(CareersPage.careersTitle);
         CareersPage.declineCookies();
         CareersPage.setDepartment();
